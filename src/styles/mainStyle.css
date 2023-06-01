@@ -1,0 +1,247 @@
+.mainHeader{
+    padding: 0 4.8rem;
+  height: 10rem;
+  /* background-color: ${(theme) => theme.color.bg}; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-lists {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.navbar-list {
+    padding: 10px;
+    font-size: 20px;
+}
+.mobile-navbar-btn{
+    display: none;
+    background-color: transparent;
+    cursor: pointer;
+    border:none;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+    display: none;
+}
+
+.close-outline{
+    display: none;
+}
+
+.active .mobile-nav-icon {
+    display: none;
+    font-size: 4.2rem;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    /* color: ; */
+    z-index: 9999;
+}
+
+.active .close-outline{
+    display: inline-block;
+}
+.heroImage{
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+}
+.imageStyle{
+    width: 100%;
+    height: 100%;
+}
+.imageStyle:hover{
+    cursor: pointer;
+    
+}
+.services-row{
+    display: flex;
+}
+.services-1,.services-2,.services-3{
+    width: 200px; 
+    margin: 10px;
+    border: 1px solid black;
+}
+.icon{
+    height: 50px;
+    width: 50px;
+}
+.starIcon{
+    width: 20px;
+    height: 20px;
+    color: gold;
+    margin: 2px;
+}
+.figure{
+    width: 120px;
+    height: 100px;
+    margin: 5px;
+}
+
+.pageNav{
+    font-size: 24px;
+}
+
+.btnStyle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 5px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.btnStyle:hover{
+    opacity: 1;
+}
+.delite-icon{
+    font-size: 30px;
+    color:red;
+}
+.cart-table{
+    display: flex;
+    width: 60%;
+    gap:10px;
+    margin:auto;
+    border-bottom: 1px solid #00000050;
+    font-size: 20px;
+}
+.active{
+    opacity: 1;
+}
+.checkStyle{
+    color: white;
+}
+.row{
+    display: "flex";
+     gap: "5px"; 
+     margin: "5px"
+}
+
+.d-flex{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    gap: 10px;
+}
+.d-wrap{
+    flex-wrap:wrap;
+}
+.sort-btn{
+    margin: 5px;
+    padding: 2px;
+}
+.active-btn{
+    background-color: black;
+    color: white;
+}
+.sort-section--style,.sort-section--style option {
+    width: 200px;
+    padding: 10px;
+}
+
+.btn-catagory{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap: 10px;
+    background-color: #00000010;
+    padding: 10px;
+}
+.cartfigure{
+    width: 50px;
+    height: 50px;
+}
+.cart-total{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     font-size: 24px;
+     font-weight: 400;
+     margin-top: 50px;
+}
+
+/*button style*/
+/* button{
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    height: 72px;
+    width: 200px;
+    border: 0;
+    border-radius: 10px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500px;
+    text-align: left;
+    background: #6e6d6d;
+    color:#ffffff;
+    cursor: pointer;
+    white-space:nowrap;
+}
+button::before,button::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+button::before{
+    background: rgb(255 255 255/10%);
+}
+
+button::after{
+    left: -100%;
+    background: #34d297;
+}
+button.loading:is(::before,::after){
+    opacity: 1;
+}
+@keyframes loading{
+    0%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(600px);
+    }
+}
+
+@keyframes span { 100%{rotate: 1turn;}}
+
+button:is(span,img){
+    transition: 0.125s;
+}
+
+button:disabled:is(span,img){
+    opacity: 0.7;
+}
+
+button.loading::after{
+    animation: loading 1s infinite linear;
+}
+button.loading img{
+    animation: spin 0.5s infinite linear;
+} */
+
+/* button close*/
+@media(max-width:930px){
+    .mobile-navbar-btn{
+        display: inline-block;
+        z-index: 9999;
+    }
+    .mobile-nav-icon {
+        font-size: 4.2rem;
+    }
+}
